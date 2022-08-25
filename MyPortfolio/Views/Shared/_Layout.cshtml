@@ -19,42 +19,12 @@
 </head>
 
 <body class="container">
-
-    <nav class="navbar navbar-expand-lg bg-light sticky-top">
-        <div class="container-fluid">
-            <img src="~/images/logo.svg" width=80 alt="Not Found"/>
-
-            <div class="d-flex">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link active" href="#about">About</a>
-                        <a class="nav-link active" href="#project">Project</a>
-                        <a class="nav-link active" href="#blog">Blog</a>
-                        <a class="nav-link active" href="#contact">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </nav>
-
+    @*@Html.Partial("_Navbar");*@
+    <partial name ="_Navbar"/>
     <div>
         @RenderBody()
     </div>
 </body>
-
-
-
-<footer>
-    <div class="container text-center mt-5">
-        <p class="blockquote">© 2022, MINHAZUL HASAN - ALL RIGHTS RESERVED</p>
-    </div>
-
-</footer>
-
+<partial name ="_Footer"/>
+@*@Html.Partial("_Footer");*@
 </html>
